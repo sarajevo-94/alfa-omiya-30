@@ -9,22 +9,30 @@
           box-sizing: border-box;
 }
 
+
+
 html {
   font-size: 18px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'MyFont';
+	src: url(/module/PixelMplus10-Regular.ttf) format("truetype");
+}
+
 body {
   overflow-x: hidden;
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: "MyFont";
   font-size: 18px;
   line-height: 1.77778;
   font-weight: bold;
   text-decoration: none;
   border: none;
   list-style: none;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   margin: 0;
 }
 
@@ -147,7 +155,7 @@ button {
 }
 
 .card {
-  background-color: #fff;
+  background-color: #000;
   margin-bottom: 20px;
   height: 100%;
 }
@@ -239,7 +247,7 @@ button {
 * Color
 *********************/
 .bg-color--keycolor {
-  background-color: #39b54a;
+  background-color: #000;
 }
 
 .bg-color--subcolor {
@@ -247,7 +255,7 @@ button {
 }
 
 .bg-color--gray {
-  background-color: #e6e6e6;
+  background-color: #ccoo33;
 }
 
 /*********************
@@ -274,8 +282,14 @@ button {
   line-height: 1.75;
   text-align: center;
   padding: 9px 20px;
-  background-color: #d9e021;
   margin: 0 -20px 20px -20px;
+  color: #000;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+  background-color: silver;
 }
 
 .section-title__stage {
@@ -284,7 +298,7 @@ button {
 }
 
 .section-title--keycolorlight {
-  background-color: #8cc63f;
+  background-color: #cc0033;
 }
 
 .section-title--keycolorlight .section-title__stage {
@@ -292,7 +306,7 @@ button {
 }
 
 .section-title--keycolor {
-  background-color: #39b54a;
+  background-color: #cc0033;
 }
 
 .section-title--story {
@@ -365,7 +379,7 @@ button {
 * header
 *****************/
 .header {
-  background-color: #fff;
+  background-color: #000;
   height: 60px;
 }
 
@@ -384,7 +398,7 @@ button {
 
 .header__logo {
   width: 330px;
-  height: 42px;
+  height: 65px;
 }
 
 .header__name {
